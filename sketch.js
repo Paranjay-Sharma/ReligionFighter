@@ -149,7 +149,7 @@ zone.visible=false;
 background("white")
 image(gameoverImg,0,0,width,height);
 if (mousePressedOver(restart)){
-    gamestate="start";
+    gamestate="play";
     score=0;
     fighter.visible=true;
     zombiehut.visible=true;
