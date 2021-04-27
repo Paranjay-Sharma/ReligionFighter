@@ -92,7 +92,7 @@ else if(gamestate==="play"){
         fighter.y=fighter.y-5;
         }
         
-    if(keyDown("space")&& frameCount%10===0){
+    if(keyDown("space")&& frameCount%2===0){
 
         bullet=createSprite(530,200);
         bullet.x=fighter.x+25;
