@@ -92,7 +92,7 @@ else if(gamestate==="play"){
         fighter.y=fighter.y-10;
         }
         
-    if(keyDown("space")&& frameCount%4===0){
+    if(keyDown("space")&& frameCount%8===0){
 
         bullet=createSprite(530,200);
         bullet.x=fighter.x+25;
@@ -107,7 +107,7 @@ else if(gamestate==="play"){
     if(frameCount%50===0){
         zombie1=createSprite(800,300);
     zombie1.addAnimation("standing",zombie1Img);
-    zombie1.velocityX=-(6*score/20);
+    zombie1.velocityX=-(6+score/2);
     zombie1.y=Math.round(random(100,400))
     zombie1.scale=0.6
     zombieGroup1.add(zombie1);
@@ -116,7 +116,7 @@ else if(gamestate==="play"){
     if(frameCount%40===0){
         zombie2=createSprite(1000,300);
     zombie2.addAnimation("standing",zombie2Img);
-    zombie2.velocityX=-(6*score/20);
+    zombie2.velocityX=-(6+score/2);
     zombie2.y=Math.round(random(100,300));
     zombie2.scale=0.6;
     zombie2.lifetime=300;
