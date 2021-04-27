@@ -40,7 +40,7 @@ if(gamestate=="start"){
     background("white")
      fill("red")
     textSize(60);
-    text("ReligionFighter",width/2+40,height/4-60);
+    text("ReligionFighter",width/2-200,height/4-60);
     textSize(40);
     fill("black")
     textSize(20);
